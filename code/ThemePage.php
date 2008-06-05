@@ -42,8 +42,7 @@ class ThemePage extends Page {
 	function publish($fromStage, $toStage, $createNewVersion = false) {
 		$archive = Archive::open($this->ThemeFile()->getRelativePath());
 		$archive->extractTo('/sites/ss2demo/www/themes');
-		
-		return $this->getExtension('Versioned')->publish($fromStage, $toStage, $createNewVersion);
+		return $this->extInstance('Versioned')->publish($fromStage, $toStage, $createNewVersion);
 	}
 
 	/**
