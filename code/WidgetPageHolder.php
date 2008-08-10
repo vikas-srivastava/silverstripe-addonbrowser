@@ -138,7 +138,7 @@ class WidgetPageHolder_Form extends Form {
 		$ID = $widget->ID;
 		$URL = Director::absoluteBaseURL().'admin/show/'.$ID; 
 		if(!$update) {
-			$email = new Email('widgets@silverstripe.com', 'matt@silverstripe.com', "New widget '$widgetname' has been uploaded", null, null, 'andrew@silverstripe.com', 'will@silverstripe.com');
+			$email = new Email('widgets@silverstripe.com', 'andrew@silverstripe.com', "New widget '$widgetname' has been uploaded", null, null, 'will@silverstripe.com');
 			$email->setBody("A new widget '$widgetname' has been uploaded by " . Member::currentUser()->Nickname . ". Please go to the Admin Panel on <a href='$URL'>$URL</a> to review it.");
 			$email->send();
 			
