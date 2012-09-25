@@ -1,0 +1,16 @@
+{
+	"name": "silverstripe-labs/addonbrowser",
+	"description": "SilverStripe Add-on Browser Module.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe-labs", "addonbrowser", "development-tool", "browsers"],
+	"authors": [
+	{
+		"name": "Sam Minnée",
+		"email": "sam@silverstripe.com"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "2.4.*"
+	}
+}
